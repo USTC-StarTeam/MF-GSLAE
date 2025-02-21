@@ -1,5 +1,6 @@
 
-# Implement of TOIS submission
+# Source Code Implement of TOIS2024
+MF-GSLAE: A Multi-Factor User Representation Pre-training Framework for Dual-Target Cross-Domain Recommendation
 
 Our model file is in `recbole_cdr/model/cross_domain_recommender/mfgslae.py`
 
