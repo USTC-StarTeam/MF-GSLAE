@@ -1,5 +1,5 @@
 
-# Source Code Implement of TOIS2024 | MF-GSLAE: A Multi-Factor User Representation Pre-training Framework for Dual-Target Cross-Domain Recommendation
+# Source Code MF-GSLAE: A Multi-Factor User Representation Pre-training Framework for Dual-Target Cross-Domain Recommendation (TOIS'2024)
 MF-GSLAE: A Multi-Factor User Representation Pre-training Framework for Dual-Target Cross-Domain Recommendation
 Authors: Hao Wang, Mingjia Yin, Luankang Zhang, Sirui Zhao, Enhong Chen*
 
