@@ -192,5 +192,5 @@ If you find this repository useful, please cite:
 
 ## 13. Contact
 
-- First author: Hao Wang.
+- First author: Hao Wang (`wanghao3@ustc.edu.cn`).
 - Repository questions: please open a GitHub issue in this repository.
