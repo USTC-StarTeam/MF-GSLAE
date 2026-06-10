@@ -154,9 +154,18 @@ python run_recbole_cdr.py --model=MFGSLAE --config_files=./config/ama-elecmov.ya
 
 ## 10. Experimental Highlights
 
-- The paper reports effectiveness across multiple dual-target cross-domain recommendation datasets.
-- The learned factor representations improve interpretability by separating user preferences into multiple subspaces.
-- The factor selection module is designed to reduce negative transfer between domains.
+The paper reports effectiveness across multiple dual-target cross-domain recommendation datasets. The public repository exposes reproduction settings for Epinions, Douban Book-Movie, and Amazon Electronics-Movies.
+
+| Reproducible setting in this repository | Evidence exposed by the release |
+| --- | --- |
+| Evaluation protocol | `recall`, `mrr`, `ndcg`, `hit`, and `precision` are configured in `recbole_cdr/properties/overall.yaml`. |
+| Validation target | The dataset configs use `NDCG@20` as the validation metric. |
+| Dataset-specific tuning | The README provides separate hyperparameter blocks for Epinions, Douban, and Amazon cross-domain settings. |
+| Model interpretation | The factor learning and selection modules separate user preferences into multiple subspaces to reduce negative transfer. |
+
+The ACM-hosted paper tables are not mirrored in this repository and the publisher PDF was not directly accessible during this pass, so exact leaderboard values are intentionally not restated here. Use the reproduction commands above to regenerate the reported metrics.
+
+**Conclusion:** MF-GSLAE's public evidence is strongest on reproducibility structure and evaluation protocol; exact numeric table values should be added once an accessible official source or released result artifact is available.
 
 ## 11. Notes For Maintainers
 

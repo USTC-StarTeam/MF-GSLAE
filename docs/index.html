@@ -205,11 +205,34 @@ use_user_loader: true</code></pre>
 <li><code>use_user_loader: true</code> is required by the reproduced settings above.</li>
 </ul>
 <h2 id="10-experimental-highlights">10. Experimental Highlights</h2>
-<ul>
-<li>The paper reports effectiveness across multiple dual-target cross-domain recommendation datasets.</li>
-<li>The learned factor representations improve interpretability by separating user preferences into multiple subspaces.</li>
-<li>The factor selection module is designed to reduce negative transfer between domains.</li>
-</ul>
+<p>The paper reports effectiveness across multiple dual-target cross-domain recommendation datasets. The public repository exposes reproduction settings for Epinions, Douban Book-Movie, and Amazon Electronics-Movies.</p>
+<table>
+<thead><tr>
+<th>Reproducible setting in this repository</th>
+<th>Evidence exposed by the release</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Evaluation protocol</td>
+<td><code>recall</code>, <code>mrr</code>, <code>ndcg</code>, <code>hit</code>, and <code>precision</code> are configured in <code>recbole_cdr/properties/overall.yaml</code>.</td>
+</tr>
+<tr>
+<td>Validation target</td>
+<td>The dataset configs use <code>NDCG@20</code> as the validation metric.</td>
+</tr>
+<tr>
+<td>Dataset-specific tuning</td>
+<td>The README provides separate hyperparameter blocks for Epinions, Douban, and Amazon cross-domain settings.</td>
+</tr>
+<tr>
+<td>Model interpretation</td>
+<td>The factor learning and selection modules separate user preferences into multiple subspaces to reduce negative transfer.</td>
+</tr>
+</tbody>
+</table>
+<p>The ACM-hosted paper tables are not mirrored in this repository and the publisher PDF was not directly accessible during this pass, so exact leaderboard values are intentionally not restated here. Use the reproduction commands above to regenerate the reported metrics.</p>
+<p><strong>Conclusion:</strong> MF-GSLAE's public evidence is strongest on reproducibility structure and evaluation protocol; exact numeric table values should be added once an accessible official source or released result artifact is available.</p>
 <h2 id="11-notes-for-maintainers">11. Notes For Maintainers</h2>
 <ul>
 <li>Keep the canonical implementation path visible: <code>recbole_cdr/model/cross_domain_recommender/mfgslae.py</code>.</li>
